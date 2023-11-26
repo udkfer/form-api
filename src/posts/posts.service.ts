@@ -29,6 +29,9 @@ export class PostsService {
       cursor,
       where,
       orderBy,
+      include: {
+        author: true,
+      },
     });
   }
 
